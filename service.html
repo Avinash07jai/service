@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* box-1 */
+        .glass{
+             filter: blur(5px);
+             position: absolute;
+             width: 100%;
+             top: -15px;
+        }
+        .box-1{
+            position: relative;
+        }
+        .head1{
+            margin-top: 400px;
+            margin-left: 250px;
+        }
+        .head1 h1{
+            font-size: 56px;
+            color: #0099ff;
+            padding-bottom: 50px;
+        }
+        .head1 p{
+            font-size: 22px;
+            color: #83BA43;
+        }
+       .img1{
+          margin-left: 700px;
+          margin-top: -200px;
+       }
+        
+        /* box-2 */
+        .background{
+            position:absolute;
+            top: 865px;
+            width: 100%;
+        }
+        .box-2{
+            position: relative;
+        }
+        .head2{
+            margin-left: 200px;
+            margin-right: 700px;
+            margin-top: 280px;
+        }
+        .head2 h1{
+            font-size: 40px;
+            color: #0099ff;
+            padding-bottom: 50px;
+        }
+        .head2 h3{
+            font-size: 23px;
+            color: #0099ff;
+            padding-bottom: 20px;
+        }
+        .head2 p{
+            font-size: 19px;
+            color: #414141;
+            padding-bottom: 40px;
+        }
+        .head2 button{
+            color: white;
+            background-color: #0099ff;
+            border: #0099ff;
+            height: 35px;
+            width: 170px;
+            border-radius: 10px;
+            font-size: 19px;
+        }
+        button:hover{
+            color: #0099ff;
+            background-color: white;
+            border:2px solid #0099ff;
+        }
+        
+        .img2{
+            margin-left: 700px;
+            margin-top: -350px;
+        }
+
+        /* box-3 */
+        .img3{
+            margin-left: 200px;
+             margin-top: -270px;
+        }
+        .head3{
+            margin-left: 740px;
+            margin-right: 170px;
+           margin-top:270px;
+        }
+        .head3 h1{
+            font-size: 40px;
+            color: #0099ff;
+            padding-bottom: 50px;
+        }
+        .head3 h3{
+            font-size: 23px;
+            color: #0099ff;
+            padding-bottom: 20px;
+        }
+        .head3 p{
+            font-size: 19px;
+            color: #414141;
+            padding-bottom: 40px;
+        }
+        .head3 button{
+            color: white;
+            background-color: #0099ff;
+            border: #0099ff;
+            height: 35px;
+            width: 170px;
+            border-radius: 10px;
+            font-size: 19px;
+        }
+        button:hover{
+            color: #0099ff;
+            background-color: white;
+            border:2px solid #0099ff;
+        }
+
+        /* box-4 */
+        .background1{
+            position: absolute;
+            width: 100%;
+            top: 2000px;
+        }
+        .box-4{
+            position: relative;
+        }
+        .head4{
+            margin-left: 200px;
+            margin-right: 700px;
+            margin-top: 380px;
+        }
+        
+        .head4 h1{
+            font-size: 40px;
+            color: #0099ff;
+            padding-bottom: 50px;
+        }
+        .head4 h3{
+            font-size: 23px;
+            color: #0099ff;
+            padding-bottom: 20px;
+        }
+        .head4 p{
+            font-size: 19px;
+            color: #414141;
+            padding-bottom: 40px;
+        }
+        .head4 button{
+            color: white;
+            background-color: #0099ff;
+            border: #0099ff;
+            height: 35px;
+            width: 170px;
+            border-radius: 10px;
+            font-size: 19px;
+        }
+        button:hover{
+            color: #0099ff;
+            background-color: white;
+            border:2px solid #0099ff;
+        }
+        .img4{
+            margin-left: 750px;
+            margin-top: -390px;
+        }
+
+
+        /* box-5 */
+        
+        .img5{
+            margin-left: 200px;
+            margin-top: 450px;
+        }
+        .head5{
+            margin-left: 740px;
+            margin-right: 170px;
+           margin-top: -370px;
+        }
+        .head5 h1{
+            font-size: 40px;
+            color: #0099ff;
+            padding-bottom: 50px;
+        }
+        .head5 h3{
+            font-size: 23px;
+            color: #0099ff;
+            padding-bottom: 20px;
+        }
+        .head5 p{
+            font-size: 19px;
+            color: #414141;
+            padding-bottom: 40px;
+        }
+        .head5 button{
+            color: white;
+            background-color: #0099ff;
+            border: #0099ff;
+            height: 35px;
+            width: 170px;
+            border-radius: 10px;
+            font-size: 19px;
+        }
+        button:hover{
+            color: #0099ff;
+            background-color: white;
+            border:2px solid #0099ff;
+        }
+        /* box-6 */
+        
+        .head6{
+            margin-left: 200px;
+            margin-right: 700px;
+            margin-top: 380px;
+        }
+        
+        .head6 h1{
+            font-size: 40px;
+            color: #0099ff;
+            padding-bottom: 50px;
+        }
+        .head6 h3{
+            font-size: 23px;
+            color: #0099ff;
+            padding-bottom: 20px;
+        }
+        .head6 p{
+            font-size: 19px;
+            color: #414141;
+            padding-bottom: 40px;
+        }
+        .head6 button{
+            color: white;
+            background-color: #0099ff;
+            border: #0099ff;
+            height: 35px;
+            width: 170px;
+            border-radius: 10px;
+            font-size: 19px;
+        }
+        button:hover{
+            color: #0099ff;
+            background-color: white;
+            border:2px solid #0099ff;
+        }
+        .img6{
+            margin-left: 750px;
+            margin-top: -390px;
+        }
+    @media screen and (max-width:370px) {
+        /* box-1 */
+        .glass{
+             width: 100%;
+        }
+        .head1{
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 5px;
+            text-align: center;
+        }
+        .head1 h1{
+            font-size: 21px;
+            padding-bottom: 0px;
+        }
+        .head1 p{
+            font-size: 11px;
+        }
+        .img1{
+            width: 280px;
+            height: 170px;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        /* box-2 */
+        .background{
+            width: 100%;
+            top: 210px;
+        }
+        .head2{
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: -10px;
+            text-align: center;
+        }
+        .head2 h1{
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+        .head2 h3{
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .head2 p{
+            font-size: 13px;
+            padding-bottom: 10px;
+        }
+        .head2 button{
+            color: white;
+            background-color: #0099ff;
+            border: #0099ff;
+            height: 25px;
+            width: 100px;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+        button:hover{
+            color: #0099ff;
+            background-color: white;
+            border:2px solid #0099ff;
+        }
+        .img2{
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+            margin-top: 15px;
+        }
+        /* box-3 */
+        .img3{
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+            margin-top: 30px;
+        }
+        .head3{
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .head3 h1{
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+        .head3 h3{
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .head3 p{
+            font-size: 13px;
+            padding-bottom: 10px;
+        }
+        .head3 button{
+            color: white;
+            background-color: #0099ff;
+            border: #0099ff;
+            height: 25px;
+            width: 100px;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+        button:hover{
+            color: #0099ff;
+            background-color: white;
+            border:2px solid #0099ff;
+        }
+        /* box-4 */
+        .background1{
+            width: 100%;
+            top: 1220px;
+        }
+        .head4{
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .head4 h1{
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+        .head4 h3{
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .head4 p{
+            font-size: 13px;
+            padding-bottom: 10px;
+        }
+        .head4 button{
+            color: white;
+            background-color: #0099ff;
+            border: #0099ff;
+            height: 25px;
+            width: 100px;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+        button:hover{
+            color: #0099ff;
+            background-color: white;
+            border:2px solid #0099ff;
+        }
+        .img4{
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        /* box-5 */
+        .img5{
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+            margin-top: 250px;
+        }
+        .head5{
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: -480px;
+            text-align: center;
+        }
+        .head5 h1{
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+        .head5 h3{
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .head5 p{
+            font-size: 13px;
+            padding-bottom: 10px;
+        }
+        .head5 button{
+            color: white;
+            background-color: #0099ff;
+            border: #0099ff;
+            height: 25px;
+            width: 100px;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+        button:hover{
+            color: #0099ff;
+            background-color: white;
+            border:2px solid #0099ff;
+        }
+        /* box-6 */
+        .head6{
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 280px;
+            text-align: center;
+        }
+        .head6 h1{
+            font-size: 25px;
+            padding-bottom: 5px;
+        }
+        .head6 h3{
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .head6 p{
+            font-size: 13px;
+            padding-bottom: 10px;
+        }
+        .head6 button{
+            color: white;
+            background-color: #0099ff;
+            border: #0099ff;
+            height: 25px;
+            width: 100px;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+        button:hover{
+            color: #0099ff;
+            background-color: white;
+            border:2px solid #0099ff;
+        }
+        .img6{
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }    
+    </style>
+</head>
+<body>
+    <!-- box-1 -->
+    <div class="box-1">
+        <div class="head1">
+            <h1>SERVICES</h1>
+            <p>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.</p>
+        </div>
+            <img class="img1" src="data:image/jpeg;base64,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" >
+    </div>
+
+    <!-- box-2 -->
+    <div class="box-2">
+    <div class="head2">
+        <h1>Design Services</h1>
+        <h3>We shine the spotlight on you.</h3>
+        <p>
+            TruPoint provides complete graphic design services that your business needs to establish a striking online and offline
+            presence. Combining your vision, our pool of creativity and advanced tools, we deliver stunning results that will help
+            you make your mark.
+        </p>
+        <button>Know more</button>
+    </div>
+        <img class="img2" src="data:image/jpeg;base64,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" >
+    </div>
+
+   <!-- box-3 -->
+    <div class="box-3">
+      <div class="head3">
+        <h1>Web Developmant Services</h1>
+        <h3>Take your business to the world,<br> confidently!</h3>
+        <p>
+            Our team specializes in developing high-quality websites and robust apps that are intuitive, modern, and inviting. We
+            help drive results for all kinds of businesses by providing customized web and mobile app solutions that cater and solve
+            all multi-platform requirements.
+        </p>
+        <button>Know more</button>
+      </div>
+      <img class="img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTxiIL4BWob271hEHgCfqcMzjPK3uQDnGT3A&usqp=CAU" >
+    </div>
+
+    <!-- box-4 -->
+    <div class="box-4">
+    <div class="head4">
+        <h1>Web and Cloud Hosting Services</h1>
+        <h3>Give your users a great online experience.</h3>
+        <p>
+            TruPoint offers a secure and reliable hosting environment so you can host your website, application, or software with
+            complete peace of mind. Our web and cloud hosting solutions are built to deliver high performance with tons of plugins,
+            widgets and modules to enhance your business prospects.
+        </p>
+        <button>Know more</button>
+    </div>
+        <img class="img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHImXuQC2PNaM-WkHoPXJG87Klq-e5HrAukQ&usqp=CAU" >
+        </div>
+
+    <!-- box-5 -->
+        <div class="box-5">
+            <img class="img5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8kp-I26MUG90ds3_ZCKIKiyBReXnpo-bKg&usqp=CAU" >
+            
+            <div class="head5">
+                <h1>Digital Marketing Services</h1>
+                <h3>Enjoy social credibility and business growth.</h3>
+                <p>
+                    In tune with changing trends, customer preferences, and technology, we craft strategies your business needs to establish
+                    as a successful brand and to generate leads. We have the experience, technical expertise, and innovative resources to
+                    promote and take your business to the next level.
+                </p>
+                <button>Know more</button>
+            </div>
+        </div>
+        
+    <!-- box-6 -->
+    <img src="" >
+    <div class="box-6">
+    <div class="head6">
+        <h1>IT Outsourcing Services</h1>
+        <h3>Outsource your business functions and grow!</h3>
+        <p>
+            Hiring a customer service team through business process outsourcing allows you to build your team whilst saving on
+            manpower cost. TruPoint offers a combination of people, process, and technology to help you focus on growing your
+            business.
+        </p>
+        <button>Know more</button>
+    </div>
+        <img class="img6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTxiIL4BWob271hEHgCfqcMzjPK3uQDnGT3A&usqp=CAU" >
+    </div>
+</body>
+</html>
